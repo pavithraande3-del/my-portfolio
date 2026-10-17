@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavithra Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name">
+
+  <!-- Fonts (needs internet; falls back to system fonts offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="brand">Pavithra Ande</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Featured Projects</a></li>
+        <li><a href="#achievements">Certifications &amp; Achievements</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Pavithra Ande</h1>
+          <p class="role">B.Tech Data Science &middot; Sri Vasavi Engineering College</p>
+          <p class="lead">
+            Data Science student passionate about building useful projects, analyzing data, and learning new technologies.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a href="assets/Pavithra-Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="photo-blob"></div>
+          <!-- Replace assets/profile.jpg with your own photo (same file name) -->
+          <img src="assets/profile.jpg.jpeg" alt="Profile photo of Your Name">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+          <div class="card reveal">
+            <p>  I am a third-year B.Tech Data Science student at Sri Vasavi Engineering College.
+  I am passionate about data analysis, software development, and building useful
+  projects that solve real-world problems.</p>
+            <p> I enjoy learning new technologies, exploring data-driven solutions, and
+  improving my technical skills through hands-on projects. I aim to build
+  meaningful solutions and grow as a technology professional.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Quick Facts</h3>
+            <ul class="facts">
+              <li><strong>Name:</strong>Pavithra Ande</li>
+              <li><strong>Course:</strong> B.Tech (Data Science)</li>
+              <li><strong>Year:</strong> 3rd</li>
+              <li><strong>College:</strong> Sri Vasavi Engineering College</li>
+              <li><strong>Location:</strong>Tadepalligudem, Andhra Pradesh, India</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="grid grid-3">
+
+          <!-- To add a new skill group, copy one whole "card" block -->
+          <div class="card reveal">
+            <h3>Languages</h3>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <!-- Add more: <span class="chip">Skill</span> -->
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Tools</h3>
+            <div class="chips">
+              <span class="chip">Excel</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3>Other Skills</h3>
+            <div class="chips">
+              <span class="chip">Public Speaking</span>
+              <span class="chip">Leadership</span>
+              <span class="chip">Adaptability</span>
+              <span class="chip">Teamwork</span>
+              <span class="chip">Time Management</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <div class="grid grid-3">
+
+          <!-- To add a project, copy one whole "project-card" article -->
+          <article class="card project-card reveal">
+            <div class="project-icon">01</div>
+            <h3>Inter2Engineer</h3>
+            <p>A college discovery platform designed to help intermediate students explore B.Tech colleges across Andhra Pradesh state and make informed educational decisions.</p>
+            <p class="tech">Tech stack: HTML, CSS, JavaScript,Excel(for colleges data)</p>
+            <div class="card-links">
+              <a href="https://inter2engineer-final.base44.app/"
+   class="btn btn-outline"
+   target="_blank"
+   rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-icon">02</div>
+            <h3>Job Market Analysis</h3>
+            <p>Built a job market analytics pipeline using Python web scraping, data cleaning, PostgreSQL storage, and a Streamlit dashboard to explore job listings and market insights.</p>
+            <p class="tech">Tech stack: Python, BeautifulSoup, Pandas, PostgreSQL, Streamlit</p>
+            <div class="card-links">
+              <a href="#" class="link-btn">Live Demo</a>
+              <a href="#" class="link-btn">Source Code</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-icon">03</div>
+            <h3>QuickConvert</h3>
+            <p>A clean and user-friendly currency converter website that simplifies currency conversion through an interface,</p>
+            <p class="tech">Tech stack: HTML, CSS, JavaScript</p>
+            <div class="card-links">
+              <a href="#" class="link-btn">Live Demo</a>
+              <a href="#" class="link-btn">Source Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS & ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Certifications &amp; Achievements</h2>
+        <div class="grid grid-2">
+
+          <div class="card reveal">
+            <h3>Certifications</h3>
+            <ul class="list">
+              <!-- Copy a <li> to add a certificate -->
+              <li>
+                <strong>Internet of Things (IoT)</strong>
+                <span>NPTEL Certification  &middot;Jan 2026 – Apr 2026</span>
+                </li>
+                <li>
+                <strong>The Joy of Computing Using Python</strong>
+                <span>NPTEL Certification  &middot;Jul 2025 – Oct 2025</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Achievements</h3>
+            <ul class="list">
+              <!-- Copy a <li> to add an achievement -->
+              
+<ul class="list">
+  <li>
+    <strong>Academic Excellence</strong>
+    <span>Secured a Top 3 position in the Data Science branch during 1st year of B.Tech.</span>
+  </li>
+  <li>
+    <strong>GDG 24-Hour Hackathon</strong>
+    <span>Selected among the Top 15 teams out of 80 participating teams.</span>
+  </li>
+  <li>
+    <strong>Internal SIH Hackathon</strong>
+    <span>Achieved a Top 3 position in the department-level internal Smart India Hackathon.</span>
+  </li>
+  <li>
+    <strong>Vasavi Talks club Student Coordinator</strong>
+    <span>Contributing to a student club inspired by TEDx that promotes public speaking and communication.</span>
+  </li>
+  <li>
+    <strong>NSS Volunteer</strong>
+    <span> Contributing to college NSS activities, including community awareness initiatives and social service activities</span>
+  </li>
+  <li>
+    <strong>SWAN Virtual Club Member</strong>
+    <span>Actively associated with SWAN, a virtual club that provides opportunities for learning, collaboration, and engagement..</span>
+  </li>
+</ul>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="grid grid-2">
+
+          <div class="card reveal">
+            <h3>Let's Connect</h3>
+            <p>I’m passionate about technology, data-driven problem-solving, and building meaningful projects. I’m always eager to learn, grow, and connect with people who share similar interests.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:pavithraande3@gmail.com">pavithraande3@gmail.com</a></li>
+              <li><strong>Phone:</strong> +91 94918 37318</li>
+              <li>
+           <strong>LinkedIn:</strong>
+           <a href="https://www.linkedin.com/in/pavithra-ande-4407a0320/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+             </li>
+              <li>
+           <strong>GitHub:</strong>
+           <a href="https://github.com/pavithraande3-del" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="card reveal" id="contactForm" novalidate>
+            <h3>Send a Message</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    <a href="#home">Back to top &uarr;</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
